@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Третья страница</title>
+    <style>
+        /* Основные стили для страницы */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/6634138/pexels-photo-6634138.jpeg');
+            background-size: cover;
+            background-attachment: fixed; /* Фиксированный фон */
+            background-position: center;
+            color: #ffffff; /* Белый текст */
+            line-height: 1.6;
+            overflow-x: hidden; /* Убираем горизонтальный скролл */
+        }
+
+        /* Контейнер для всего содержимого */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+            border-radius: 12px; /* Скруглённые углы */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Тень */
+            margin-top: 40px; /* Отступ сверху */
+        }
+
+        /* Заголовок */
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Текстовые блоки */
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        /* Изображения */
+        img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тень */
+        }
+
+        /* Стили для подписи под изображением */
+        .caption {
+            font-size: 16px; /* Размер текста подписи */
+            color: #FF5733; /* Яркий цвет для выделения */
+            text-align: center; /* Центрирование подписи */
+            margin-top: 10px; /* Отступ сверху */
+        }
+
+        /* Разделитель для визуального оформления */
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .divider hr {
+            flex: 1; /* Линия растягивается */
+            border: 0;
+            border-top: 2px solid #FF5733; /* Цвет линии */
+            margin: 0 10px;
+        }
+
+        .divider span {
+            font-size: 18px;
+            font-weight: bold;
+            color: #FF5733;
+        }
+    </style>
+</head>
+<body>
+    <!-- Основной контент -->
+    <div class="content">
+        <!-- Заголовок -->
+        <h1>Привет булочка❤️</h1>
+
+        <!-- Текст -->
+        <p>
+            Тут я заеблся знатно.
+        </p>
+
+        <!-- Первая картинка -->
+        <img src="https://images.pexels.com/photos/722245/pexels-photo-722245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Картинка">
+        <p class="caption">Это я тебя люблю очень</p>
+
+        <!-- Разделитель -->
+        <div class="divider">
+            <hr>
+            <span>Прокрути вниз</span>
+            <hr>
+        </div>
+
+        <!-- Текст и фото -->
+        <p>
+            У меня с фантазией так себе, но я люблю тебя. И задача была написать код хоть как-то
+        </p>
+        <img src="https://images.pexels.com/photos/1929611/pexels-photo-1929611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Пример изображения">
+        <p class="caption"> Был бы ноутбук я бы сделал это немного лучше.</p>
+
+        <!-- Заключительный текст -->
+        <p>
+            А еще вторая фотография это тай, надеюсь хоть туда мы сможем попасть, кстати когда пишешь текст в коде то там нету т9, так что я хз сколько там ошибок.
+        </p>
+    </div>
+</body>
+</html>

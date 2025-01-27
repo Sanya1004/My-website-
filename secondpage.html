@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вторая страница с фоном</title>
+    <style>
+        /* Убираем отступы и устанавливаем шрифт */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/6634138/pexels-photo-6634138.jpeg');
+            background-size: cover; /* Растягиваем картинку на весь экран */
+            background-position: center; /* Центрируем картинку */
+            background-attachment: fixed; /* Картинка остается на месте при прокрутке */
+            background-repeat: no-repeat;
+        }
+
+        /* Контейнер для основного контента */
+        .content {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Контейнер для текста и других элементов */
+        h1 {
+            font-size: 3rem;
+            margin-top: 100px;
+        }
+
+        /* Просто добавим больше контента, чтобы было что прокручивать */
+        .section {
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для текста */
+            margin: 20px 0;
+        }
+
+        .section p {
+            font-size: 1.5rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Основной контент -->
+    <div class="content">
+        <h1>Добро пожаловать Сладкий</h1>
+        <p>Прокручивай страницу, чтобы увидеть больше контента!</p>
+    </div>
+
+    <!-- Добавляем больше секций, чтобы страница могла прокручиваться -->
+    <div class="section">
+        <p>Здесь может быть текст или другие элементы. Но без ноутбука я заебался это делать.</p>
+    </div>
+
+    <div class="section">
+        <p>Еще текст. Тут много интересного, чтобы прокручивать! Но не забывай что я заебался</p>
+    </div>
+
+    <div class="section">
+        <p>Завершающая часть. Спасибо за посещение! Это было трудно, кстати ты же не забыл что мне вечером нужно звонить?</p>
+    </div>
+
+</body>
+</html>

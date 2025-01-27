@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Первая страница с кнопками</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/6634138/pexels-photo-6634138.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #100b12;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #FF5733;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .subheading {
+            font-size: 24px;
+            font-weight: 500;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+            line-height: 1.5;
+            max-width: 800px;
+        }
+
+        .button {
+            background-color: #007BFF;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-size: 18px;
+            padding: 12px 24px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 8px #666;
+            width: 220px;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 12px #666;
+        }
+
+        .button:active {
+            background-color: #003f7f;
+            box-shadow: 0 4px #666;
+            transform: translateY(4px);
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .second-button {
+            margin-top: 20px;
+        }
+
+        /* Стили для кликабельного слова */
+        .hidden-link {
+            color: inherit; /* Используем цвет родителя */
+            text-decoration: none; /* Убираем подчеркивание */
+            font-weight: bold; /* Жирный шрифт */
+        }
+
+        .hidden-link:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+    </style>
+</head>
+<body>
+    <h1>ДОБРО ПОЖАЛОВАТЬ ГОСПОДА!</h1>
+    <h2>Важное объявление</h2>
+    <p class="subheading">Нажмите на кнопку ниже, чтобы перейти на другую страницу. Только не путайте кнопки, за одной из них сюрприз — <a href="fourth-page.html" class="hidden-link">хуй</a>. Так что будьте осторожны!</p>
+
+    <div class="buttons-container">
+        <a href="third-page.html">
+            <button class="button">Для Вари</button>
+        </a>
+        <a href="secondpage.html">
+            <button class="button second-button">Для Юры</button>
+        </a>
+    </div>
+
+</body>
+</html>
